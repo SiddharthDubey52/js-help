@@ -113,22 +113,46 @@
 //     console.log("I am finally()");
 // });
 
-let  p1 = fetch("https://api.github.com/users");
-console.log(p1);
+// let  p1 = fetch("https://api.github.com/users");
+// console.log(p1);
 
-p1.then((response) => {
-    console.log(response);
-    let p2 = response.json();
-    console.log(p2);
-    p2.then((data) => {
-        console.log(data);
+// p1.then((response) => {
+//     console.log(response);
+//     let p2 = response.json();
+//     console.log(p2);
+//     p2.then((data) => {
+//         console.log(data);
+//     });
+
+//     p2.catch((err) => {
+//         console.log(err);
+//     });
+// });
+
+// p1.catch((err) => {
+//     console.log(err);
+// });
+
+// ! ASYNC AND AWAIT
+async function fetchuser(){
+    try{
+        let resp = await fetch("https://api.github.com/users");
+        let users = await resp.json();
+        console.log(users);
+        displayuser(users)
+    }catch (error){
+        console.log(error);
+    }
+}
+fetchuser();
+ 
+function displayuser(allusers){
+    console.log(allusers);
+    allusers.map((user) => {
+        let {login, avatar_url} = user;
+        console.log(login);
+        document.write(`<h1>${login}</h1>
+            <img src = '${avatar_url}'/>`);
     });
+}
 
-    p2.catch((err) => {
-        console.log(err);
-    });
-});
-
-p1.catch((err) => {
-    console.log(err);
-});
