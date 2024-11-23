@@ -156,3 +156,17 @@ function displayuser(allusers){
     });
 }
 
+// set-interval
+
+// let x = setInterval(() => {
+//     console.log("hello world")
+// }, 2000);
+
+// setTimeout(() => {
+//     console.log("Byeee")
+// } , 5000);
+
+
+// setTimeout(() => {
+//     clearInterval(x);
+// },8000)
