@@ -170,3 +170,68 @@ function displayuser(allusers){
 // setTimeout(() => {
 //     clearInterval(x);
 // },8000)
+
+
+// ! Dom Selectors
+// document.getElementById()
+// document.getElementsByClassName()
+// document.getElementsByTagName()
+// document.querySelector()
+// document.querySelectoAll()
+
+
+// document.getElementById()
+// let h1 = document.getElementById("head");
+// console.log(h1);
+
+// getElementsByClassName()
+// it is used to target multiple elements with the same classname and returns a HTMLCOLLECTION()
+// HTMLCOLLECTION is an impure array
+
+// let section = document.getElementsByClassName("container");
+// console.log(section);
+// console.log(section[2]);
+// console.log(Array.isArray(section))   // false
+
+// let pureArr = Array.from(section);
+// console.log(pureArr) // give TRUE  // by using pure we convert impure array to pure array after that conversion we use operation on array 
+
+// console.log(Array.isArray(pureArr));  // TRUE
+
+// pureArr.pop()
+// console.log(pureArr);
+
+
+// let head = document.getElementById("head");
+// console.log(head);  
+// console.log(head.textContent); // Welcome to dom1
+
+// let head = document.getElementById("heaD");
+// console.log(head);  // it gives null because id name is not same 
+// console.log(head.textContent);
+
+// let container = document.getElementsByClassName("container");
+// console.log(container[0].textContent);
+// console.log(container[1].textContent);
+// console.log(container[2].textContent);
+
+// document.getElementsByTagName()
+// let section = document.getElementsByTagName("section")
+// console.log(section)
+// console.log(section[1].textContent)
+
+// document.querySelector(#id,.class,tagname)  they accept both 
+
+let head = document.querySelector("#head")
+console.log(head)
+
+let section = document.querySelector(".container")
+console.log(section)
+
+// priority 
+// id
+// class 
+// tagname
+// it give only one but follow above priority
+let element = document.querySelector("p,#head,.container")
+console.log(element)
