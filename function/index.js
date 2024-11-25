@@ -134,27 +134,27 @@
 // });
 
 // ! ASYNC AND AWAIT
-async function fetchuser(){
-    try{
-        let resp = await fetch("https://api.github.com/users");
-        let users = await resp.json();
-        console.log(users);
-        displayuser(users)
-    }catch (error){
-        console.log(error);
-    }
-}
-fetchuser();
+// async function fetchuser(){
+//     try{
+//         let resp = await fetch("https://api.github.com/users");
+//         let users = await resp.json();
+//         console.log(users);
+//         displayuser(users)
+//     }catch (error){
+//         console.log(error);
+//     }
+// }
+// fetchuser();
  
-function displayuser(allusers){
-    console.log(allusers);
-    allusers.map((user) => {
-        let {login, avatar_url} = user;
-        console.log(login);
-        document.write(`<h1>${login}</h1>
-            <img src = '${avatar_url}'/>`);
-    });
-}
+// function displayuser(allusers){
+//     console.log(allusers);
+//     allusers.map((user) => {
+//         let {login, avatar_url} = user;
+//         console.log(login);
+//         document.write(`<h1>${login}</h1>
+//             <img src = '${avatar_url}'/>`);
+//     });
+// }
 
 // set-interval
 
