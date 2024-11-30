@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom - 25-11-24</title>
+  </head>
+  <body onload="webpageLoad()">
+
+ 
+    <h1 id="head">Welcome to Dom1</h1>
+    <h1 id="head">Welcome to Dom2</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vitae
+      autem soluta aliquam ut officiis assumenda quam, doloribus beatae debitis
+      dicta?
+    </p>
+    <section class="container">Container1</section>
+    <section class="container">Container2</section>
+    <section class="container">Container3</section>
+
+    <button onclick="clickfun()">click</button>
+
+    <button ondblclick = "clickdbl()">double click</button>
+
+    <button onmouseenter = "enter()" onmouseleave="leave()">mouse enter</button>
+
+    <section onmousemove="move()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolorum ullam ut provident officia suscipit dicta inventore veniam aliquid fugiat?</section>
+
+<input type="text" onkeydown ="down()" onkeyup="up()"/>
+
+<input type="text" onchange="changeme()"/>
+
+<form onsubmit="formdata(event)">
+  <input type="text" placeholder="Email" id="email"/>
+  <br/>
+  <input type="text" placeholder="Password" id="password">
+  <button type="submit">submit</button>
+</form>
+
+
+<p style="height: 100px;
+width : 300px;
+background-color: aqua;
+overflow-y: scroll;"
+onscroll="parascroll()">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quaerat provident sapiente voluptas hic voluptatibus amet natus sequi nemo. Delectus eum quaerat ratione atque sint ex perspiciatis deserunt perferendis repellendus repudiandae. Id tempora nemo cupiditate eligendi labore tenetur numquam quo dolorem, obcaecati error velit illum ea nostrum dicta voluptates. Delectus impedit recusandae blanditiis aliquam eligendi praesentium deserunt eaque adipisci ullam obcaecati esse, earum debitis reiciendis dignissimos hic deleniti, dolorem eos enim ipsum officia. Saepe, impedit ipsum autem ipsam accusantium molestias eius iste dolores, totam quisquam numquam officia cum aliquid.</p>
+
+    <script src="./dom.js"></script>
+  </body>
+</html>

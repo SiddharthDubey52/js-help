@@ -1,0 +1,21 @@
+main{
+    height: 90%;
+    width: 90%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    height: 80%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    height: 50%;
+    width: 50%;
+    background-color: yellow;
+}
